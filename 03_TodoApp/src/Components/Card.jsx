@@ -6,7 +6,7 @@ import { useTodo } from '../Contexts/todoContext'
 function Card({todo}) {
     const {toggleComplete, deleteTodo} = useTodo();
     const [editable, setEditable] = useState(false)
-    const [img, setImg] = useState('edit.png')
+    const [img, setImg] = useState('https://res.cloudinary.com/dfl8h4on4/image/upload/v1720172831/edit_fx7yb0.png')
     const [tittle, setTittle] = useState(todo.tittle);
     const inputRef = useRef(null);
 
