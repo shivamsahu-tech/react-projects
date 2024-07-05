@@ -1,0 +1,101 @@
+
+
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box{
+    height: 45vh;
+    width: 38vw;
+    min-height: 200px;
+    min-width: 400px ;;
+    background-color: rgb(255, 255, 255, 0.6);
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.inputbox {
+    width: 36.1vw;
+    height: 14.85vh;
+    min-height: 66px;
+    min-width: 360px ;;
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.swap {
+    background-color: rgb(15, 54, 170);
+    border-radius: 5px;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    /* position: sticky; */
+    /* position: static; */
+    position: absolute;
+    /* margin-top: -4.8rem;  */
+    border: 3px solid white;
+    /* z-index: 2px; */
+    font-size: 1.1rem;
+
+}
+
+ 
+.boxButton {
+    width: 36.1vw;
+    height: 8.1vh;
+    min-height: 36px;
+    min-width: 360px ;;
+    background-color: rgb(15, 54, 170);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.left, .right{
+    font-size: 1.15rem;
+    /* font-weight: 520; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputbox  input {
+    width: 12rem;
+    padding: 0 0.5rem;
+    background-color: rgb(255, 255, 255) ;
+}
+
+.inputbox input:focus{
+    outline: none;
+}
+
+.inputbox select{
+    border: 1px solid black;
+    
+}
+
+.left {
+    justify-content: space-evenly;
+
+    align-items: flex-start;
+}
+
+.right {
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+
+/* @media screen and  (max-width: 425px){
+    html{
+        font-size: 16px;
+    }
+} */

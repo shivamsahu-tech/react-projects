@@ -1,0 +1,39 @@
+#root {
+  height: 100vh;
+  margin: 0 auto;
+  padding: 9rem 18rem;
+  text-align: center;
+  background: #353639;
+}
+
+html{
+  font-size: 1.05vw;
+}
+
+* {
+  line-height: 2rem;
+}
+
+
+.input-field {
+  width: 85%;
+}
+
+
+@media screen and (max-width: 600px) {
+  #root {
+    padding: 10rem 5rem;
+  }
+  html{
+    font-size: 2.5vw;
+  }
+
+  .input-field {
+    width: 70%;
+  }
+}
+
+.list::-webkit-scrollbar{
+  display: none;
+}
+
