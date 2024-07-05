@@ -22,11 +22,11 @@ function Card({todo}) {
     const edit_save = () => {
         if(editable){
             setEditable(editable => !editable);
-            setImg('edit.png');
+            setImg('https://res.cloudinary.com/dfl8h4on4/image/upload/v1720172831/edit_fx7yb0.png');
         }
         else{
             setEditable(editable => !editable);
-            setImg('save.png');
+            setImg('https://res.cloudinary.com/dfl8h4on4/image/upload/v1720173040/save_wzdxaz.png');
         }
     }
 
@@ -51,7 +51,7 @@ function Card({todo}) {
       </div> 
      <div className='flex  items-center gap-4 ml-3 mr-3'>
         <button onClick={edit_save} ><img className='w-7' src={img} alt="" /></button>
-        <button onClick={() => {deleteTodo(todo.id)}} ><img className='w-8' src="trash.png" alt="" /></button>
+        <button onClick={() => {deleteTodo(todo.id)}} ><img className='w-8' src="https://res.cloudinary.com/dfl8h4on4/image/upload/v1720173004/trash_xwacrq.png" alt="" /></button>
      </div>
     </div>
   )
