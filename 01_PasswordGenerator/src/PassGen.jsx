@@ -2,16 +2,26 @@ import React, { useCallback, useEffect, useState } from 'react';
 
 function PassGen() {
   const [password, setPassword] = useState("");
-  const [strength, setStrength] = useState("poor");
+  const [strength, setStrength] = useState('https://res.cloudinary.com/dfl8h4on4/image/upload/v1720170826/poor_jegpqu.png');
+  const [imgType, setImgType] = useState('poor')
   const [length, setLength] = useState(8);
   const [input, setInput] = useState([false, false, false]);
   const [flag, setFlag] = useState(true);
    const [copied, setCopied] = useState(false);
 
-  const updateImg(stren){
-    if(stren == poor) setStrength("https://www.imghippo.com/i/1ocoW1720169098.png")
-    else if(stren == good) setStrength("https://www.imghippo.com/i/nCqC61720168671.png")
-    else setStrength("https://www.imghippo.com/i/939zq1720169077.png")
+  const updateImg = (stren) => {
+    if(stren === 'poor'){
+      setStrength("https://res.cloudinary.com/dfl8h4on4/image/upload/v1720170826/poor_jegpqu.png")
+      setImgType('poor')
+    }
+    else if(stren == 'good') {
+      setStrength("https://res.cloudinary.com/dfl8h4on4/image/upload/v1720171067/good_zfy7p2.png")
+      setImgType('good')
+    }
+    else {
+      setStrength("https://res.cloudinary.com/dfl8h4on4/image/upload/v1720171108/strong_jhnccj.png")
+      setImgType('strong')
+    }
   }
 
   useEffect(() => {
@@ -42,7 +52,7 @@ function PassGen() {
         {/* for showing password strength */}
         <div className='w-4/5 flex justify-start -my-6 text-white'>
           <div className='px-5 '><img src={strength} alt="" style={{width:'30px', height:'30px' }} /></div>
-          <h5 className='text-xl font-bold -ml-3'>{strength}</h5>
+          <h5 className='text-xl font-bold -ml-3'>{imgType}</h5>
         </div>
         {/* for input */}
         <div className=' check-input w-4/5 h-2/5 mt-10 text-white text-xl font-bold flex items-center justify-between -ml-4'>
