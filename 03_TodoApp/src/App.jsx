@@ -9,7 +9,7 @@ import { TodoContextProvider, useTodo } from './Contexts/todoContext'
 function App() {
   
 
-  const [todos, setTodo] = useState(JSON.parse(localStorage.getItem('todos')));
+  const [todos, setTodo] = useState(JSON.parse(localStorage.getItem('todos')) || []);
 
   // Function for editing the todos
   const editTodo = (id, newTitle) => {
