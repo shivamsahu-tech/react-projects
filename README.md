@@ -1,4 +1,4 @@
-# Frontend Projects Repository
+# React Projects Repository
 
 ![HTML Badge](https://img.shields.io/badge/HTML-5-orange) ![CSS Badge](https://img.shields.io/badge/CSS-3-blue) ![JavaScript Badge](https://img.shields.io/badge/JavaScript-ES6-yellow) ![Vercel Badge](https://img.shields.io/badge/Deployed-Vercel-black)
 
@@ -49,8 +49,8 @@ Welcome to my collection of React projects! Each project is deployed and can be 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/frontend-projects.git
-    cd frontend-projects
+    git clone https://github.com/your-username/react-projects.git
+    cd react-projects
     ```
 
 2. Navigate to the desired project directory and install dependencies:
@@ -66,8 +66,6 @@ Welcome to my collection of React projects! Each project is deployed and can be 
 
 ## Contributing
 
-Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+If you have any ideas, suggestions, or bug reports, We welcome you.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
