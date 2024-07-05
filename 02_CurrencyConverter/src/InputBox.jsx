@@ -19,10 +19,10 @@ function InputBox({
   return (
     <div className='inputbox rounded-md  '>
       <div className="left">
-        <label htmlFor="">From</label>
+        <label htmlFor="">{str}</label>
         <input type="number" name="" id="" 
-        value={selectedCurrency} 
         onChangeCapture={(e) => {setAmt(e.target.value)}}
+        value={amt}
         disabled={inputAccessibility}
          />
       </div>
