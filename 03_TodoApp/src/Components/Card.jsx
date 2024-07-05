@@ -50,7 +50,7 @@ function Card({todo}) {
         />
       </div> 
      <div className='flex  items-center gap-4 ml-3 mr-3'>
-        <button onClick={edit_save} ><img className='w-7' src={img} alt="edit/save" /></button>
+        <button onClick={edit_save} ><img className='w-7' src={img} alt="" /></button>
         <button onClick={() => {deleteTodo(todo.id)}} ><img className='w-8' src="https://res.cloudinary.com/dfl8h4on4/image/upload/v1720173004/trash_xwacrq.png" alt="delete" /></button>
      </div>
     </div>
