@@ -1,6 +1,6 @@
 # React Projects Repository
 
-![HTML Badge](https://img.shields.io/badge/HTML-5-orange) ![CSS Badge](https://img.shields.io/badge/CSS-3-blue) ![JavaScript Badge](https://img.shields.io/badge/JavaScript-ES6-yellow) ![React Badge](https://img.shields.io/badge/React-17.0.2-blue) ![Vite Badge](https://img.shields.io/badge/Vite-2.0-yellow) ![Tailwind CSS Badge](https://img.shields.io/badge/TailwindCSS-2.0-green) ![Netlify Badge](https://img.shields.io/badge/Deployed-Netlify-blue)
+![React Badge](https://img.shields.io/badge/React-17.0.2-blue) ![Vite Badge](https://img.shields.io/badge/Vite-2.0-yellow) ![Tailwind CSS Badge](https://img.shields.io/badge/TailwindCSS-2.0-green)  ![JavaScript Badge](https://img.shields.io/badge/JavaScript-ES6-yellow) ![HTML Badge](https://img.shields.io/badge/HTML-5-orange) ![CSS Badge](https://img.shields.io/badge/CSS-3-blue) ![Netlify Badge](https://img.shields.io/badge/Deployed-Netlify-blue)
 
 Welcome to my collection of React projects! Each project is deployed and can be accessed through the provided links. Below is a table summarizing the projects:
 
