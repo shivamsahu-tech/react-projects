@@ -8,7 +8,11 @@ function PassGen() {
   const [flag, setFlag] = useState(true);
    const [copied, setCopied] = useState(false);
 
-  
+  const updateImg(stren){
+    if(stren == poor) setStrength("https://www.imghippo.com/i/1ocoW1720169098.png")
+    else if(stren == good) setStrength("https://www.imghippo.com/i/nCqC61720168671.png")
+    else setStrength("https://www.imghippo.com/i/939zq1720169077.png")
+  }
 
   useEffect(() => {
     let str = "qwertyuiopasdfghjklzxcvbnm";
@@ -21,9 +25,9 @@ function PassGen() {
         let rand = Math.floor(Math.random()*len+1);
         pass += str.charAt(rand);
     }
-    if(input[0] && input[1] && input[2] && length > 10) setStrength("strong");
-    else if((((input[0] && input[1]) || (input[2] && input[1]) || (input[0] && input[2])) && length > 10) || length > 20 ) setStrength('good')
-    else setStrength('poor')
+    if(input[0] && input[1] && input[2] && length > 10) updateImg('strong')
+    else if((((input[0] && input[1]) || (input[2] && input[1]) || (input[0] && input[2])) && length > 10) || length > 20 ) updateImg('good')
+    else updateImg('poor')
     setPassword(pass);
   },[length, flag])
 
@@ -37,7 +41,7 @@ function PassGen() {
         </div>
         {/* for showing password strength */}
         <div className='w-4/5 flex justify-start -my-6 text-white'>
-          <div className='px-5 '><img src={`${strength}.png`} alt="" style={{width:'30px', height:'30px' }} /></div>
+          <div className='px-5 '><img src={strength} alt="" style={{width:'30px', height:'30px' }} /></div>
           <h5 className='text-xl font-bold -ml-3'>{strength}</h5>
         </div>
         {/* for input */}
